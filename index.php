@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible"
-    content="ie=edge">
     <title>My Portal Page</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h1><a href="index.php">Tori's Portal Page</a></h1>    
-<h2>The navigation below represents our BIG Assignments.</h2>
 <div id="wrapper">
+<header>
+<a href="https://toriclasswork.com/it261/"><img id="banner" src="../it261/images/banner2.png" alt="website banner"></a>
+
+</header>
+
+
 <nav>
 <ul>
 
@@ -26,33 +28,63 @@
 </nav>
 
 <main>
-<h2>About Tori</h2>
-<img class="right" src="../it261/website/images/logo.png" alt="Tori">
-<p>A paragraph abput yourself, i.e., goals, background, hobbies etc! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem amet neque est autem magni possimus libero, et suscipit maiores quia explicabo quos, sunt perferendis. Possimus veniam commodi facere? Quia, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae accusamus amet maiores obcaecati. Asperiores nam expedita earum perferendis ab aliquam minus, doloribus autem odio architecto saepe, magnam eveniet distinctio?</p>
+<h1>Welcome to my Portal Page!</h1>
+
+
+<img class="left" src="../it261/images/tori.jpg" alt="Tori Brown">
+<h2>About</h2>
+
+<p>Hello! I'm Tori Brown and I am currently in Seattle Central's web design program. I really love how creative you can be when designing web pages plus, I've always loved graphic design and web pages are the perfect canvas for it. After graduating from the program, my goal is to pursue a career in web design. </p>
+    
+<p>Outside of studying web design, I'm a bit of a homebody and spend most of my time hanging out at home with my partner and our cat, Elvis. Some of my hobbies are crocheting, digital art, collecting antique wind-up toys and baking.</p>
+
+
+
+<img class="week2" src="../it261/images/mampsm.png" alt="MAMP">
+
+<img class="week2" src="../it261/images/php-error.png" alt="PHP Error">
 
 </main>
-
 
 <aside>
 <h2>Weekly Class Exercises</h2>
 <h3>Week 2</h3>
 <ul>
-<ol>
-<li><a href="var.php">var.php</a></li>
-<li><a href="var2.php">var2.php</a></li>
-<li><a href="var.php">something.php</a></li>
-<li><a href="var.php">something.php</a></li>
-</ol>
+
+<li><a href="https://toriclasswork.com/it261/weeks/week2/var.php">var.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week2/vars2.php">vars2.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week2/currency-logic.php">currency-logic.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week2/currency.php">currency.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week2/heredoc.php">heredoc.php</a></li>
+
 
 
 </ul>
 
 
+
+
 </aside>
+
+<footer>
+<ul>
+        <li>Copyright &copy;
+            2024</li>
+        <li>All Rights Reserved</li>
+        <li><a href="https://toriclasswork.com/it261/index.php">Web Design by Tori</a></li>
+        <li><a id="html-checker" href="#">HTML Validation</a></li>
+        <li><a id="css-checker" href="#">CSS Validation</a></li>
+        </ul>
+        
+        <script>
+                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+
+</footer>
 
 </div>
 <!-- end wrapper -->
-
 
 </body>
 </html>
