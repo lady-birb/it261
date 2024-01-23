@@ -1,90 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portal Page</title>
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-<div id="wrapper">
-<header>
-<a href="https://toriclasswork.com/it261/"><img id="banner" src="../it261/images/banner2.png" alt="website banner"></a>
-
-</header>
-
-
-<nav>
-<ul>
-
-<li><a href="">Switch</a></li>
-<li><a href="">Troubleshoot</a></li>
-<li><a href="">Calculator</a></li>
-<li><a href="">Email</a></li>
-<li><a href="">Database</a></li>
-<li><a href="">Gallery</a></li>
-</ul>
-
-</nav>
-
-<main>
-<h1>Welcome to my Portal Page!</h1>
-
-
-<img class="left" src="../it261/images/tori.jpg" alt="Tori Brown">
-<h2>About</h2>
-
-<p>Hello! I'm Tori Brown and I am currently in Seattle Central's web design program. I really love how creative you can be when designing web pages plus, I've always loved graphic design and web pages are the perfect canvas for it. After graduating from the program, my goal is to pursue a career in web design. </p>
+<?php
+	$str_browser_language = !empty($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? strtok(strip_tags($_SERVER['HTTP_ACCEPT_LANGUAGE']), ',') : '';
+	$str_browser_language = !empty($_GET['language']) ? $_GET['language'] : $str_browser_language;
+	switch (substr($str_browser_language, 0,2))
+	{
+		case 'de':
+			$str_language = 'de';
+			break;
+		case 'en':
+			$str_language = 'en';
+			break;
+		default:
+			$str_language = 'en';
+	}
     
-<p>Outside of studying web design, I'm a bit of a homebody and spend most of my time hanging out at home with my partner and our cat, Elvis. Some of my hobbies are crocheting, digital art, collecting antique wind-up toys and baking.</p>
+	$arr_available_languages = array();
+	$arr_available_languages[] = array('str_name' => 'English', 'str_token' => 'en');
+	$arr_available_languages[] = array('str_name' => 'Deutsch', 'str_token' => 'de');
+    
+	$str_available_languages = (string) '';
+	foreach ($arr_available_languages as $arr_language)
+	{
+		if ($arr_language['str_token'] !== $str_language)
+		{
+			$str_available_languages .= '<a href="'.strip_tags($_SERVER['PHP_SELF']).'?language='.$arr_language['str_token'].'" lang="'.$arr_language['str_token'].'" xml:lang="'.$arr_language['str_token'].'" hreflang="'.$arr_language['str_token'].'">'.$arr_language['str_name'].'</a> | ';
+		}
+	}
+	$str_available_languages = substr($str_available_languages, 0, -3);
+?>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="<?php echo $str_language; ?>" xml:lang="<?php echo $str_language; ?>">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>MAMP PRO</title>
+<style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .9em;
+        color: #000000;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: 10px 20px 20px 20px;
+    }
 
+    samp {
+        font-size: 1.3em;
+    }
 
-<img class="week2" src="../it261/images/mampsm.png" alt="MAMP">
+    a {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
 
-<img class="week2" src="../it261/images/php-error.png" alt="PHP Error">
+    sup a {
+        text-decoration: none;
+    }
 
-</main>
+    hr {
+        margin-left: 90px;
+        height: 1px;
+        color: #000000;
+        background-color: #000000;
+        border: none;
+    }
 
-<aside>
-<h2>Weekly Class Exercises</h2>
-<h3>Week 2</h3>
-<ul>
+    #logo {
+        margin-bottom: 10px;
+        margin-left: 28px;
+    }
 
-<li><a href="https://toriclasswork.com/it261/weeks/week2/var.php">var.php</a></li>
-<li><a href="https://toriclasswork.com/it261/weeks/week2/vars2.php">vars2.php</a></li>
-<li><a href="https://toriclasswork.com/it261/weeks/week2/currency-logic.php">currency-logic.php</a></li>
-<li><a href="https://toriclasswork.com/it261/weeks/week2/currency.php">currency.php</a></li>
-<li><a href="https://toriclasswork.com/it261/weeks/week2/heredoc.php">heredoc.php</a></li>
+    .text {
+        width: 80%;
+        margin-left: 90px;
+        line-height: 140%;
+    }
+</style>
+</head>
 
+<body>
+    <p><img src="MAMP-PRO-Logo.png" id="logo" alt="MAMP PRO Logo" width="250" height="49" /></p>
 
+<?php if ($str_language == 'de'): ?>
 
-</ul>
+    <p class="text"><strong>Der virtuelle <span lang="en" xml:lang="en">Host</span> wurde erfolgreich eingerichtet.</strong></p>
+    <p class="text">Wenn Sie diese Seite sehen, dann bedeutet dies, dass der neue virtuelle <span lang="en" xml:lang="en">Host</span> erfolgreich eingerichtet wurde. Sie können jetzt Ihren <span lang="en" xml:lang="en">Web</span>-Inhalt hinzufügen, diese Platzhalter-Seite<sup><a href="#footnote_1">1</a></sup> sollten Sie ersetzen <abbr title="beziehungsweise">bzw.</abbr> löschen.</p>
+    <p class="text">
+        Server-Name: <samp><?php echo $_SERVER['SERVER_NAME']; ?></samp><br />
+        Document-Root: <samp><?php echo $_SERVER['DOCUMENT_ROOT']; ?></samp>
+    </p>
+    <p class="text" id="footnote_1"><small><sup>1</sup> Dateien: <samp>index.php</samp> und <samp>MAMP-PRO-Logo.png</samp></small></p>
+    <hr />
+    <p class="text">This page in: <?php echo $str_available_languages; ?></p>
 
+<?php elseif ($str_language == 'en'): ?>
 
+    <p class="text"><strong>The virtual host was set up successfully.</strong></p>
+    <p class="text">If you can see this page, your new virtual host was set up successfully. Now, web content can be added and this placeholder page<sup><a href="#footnote_1">1</a></sup> should be replaced or deleted.</p>
+    <p class="text">
+        Server name: <samp><?php echo $_SERVER['SERVER_NAME']; ?></samp><br />
+        Document root: <samp><?php echo $_SERVER['DOCUMENT_ROOT']; ?></samp>
+    </p>
+    <p class="text" id="footnote_1"><small><sup>1</sup> Files: <samp>index.php</samp> and <samp>MAMP-PRO-Logo.png</samp></small></p>
+    <hr />
+    <p class="text">Diese Seite auf: <?php echo $str_available_languages; ?></p>
 
-
-</aside>
-
-<footer>
-<ul>
-        <li>Copyright &copy;
-            2024</li>
-        <li>All Rights Reserved</li>
-        <li><a href="https://toriclasswork.com/it261/index.php">Web Design by Tori</a></li>
-        <li><a id="html-checker" href="#">HTML Validation</a></li>
-        <li><a id="css-checker" href="#">CSS Validation</a></li>
-        </ul>
-        
-        <script>
-                document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-                document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>
-
-</footer>
-
-</div>
-<!-- end wrapper -->
+<?php endif; ?>
 
 </body>
 </html>
