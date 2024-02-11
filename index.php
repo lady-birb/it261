@@ -89,6 +89,15 @@
 
 </ul>
 
+<h3>Week 6</h3>
+<ul>
+
+<li><a href="https://toriclasswork.com/it261/weeks/week6/form.php">form.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week6/form2.php">form2.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week6/functions.php">functions.php</a></li>
+
+</ul>
+
 </aside>
 
 <footer>
