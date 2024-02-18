@@ -12,6 +12,7 @@ $people['Amy_Klobuchar'] = 'klobu_Senator from MN.';
 $people['Julian_Castro'] = 'castr_Former Housing/Urban from TX.';
 // variable  key              value
 //$name                       $image
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,16 @@ $people['Julian_Castro'] = 'castr_Former Housing/Urban from TX.';
 <tr>
 <td><img src="images/<?php echo substr($image, 0, 5);?>.jpg" alt="<?php echo str_replace('_', ' ', $name)   ;?>"</td>
 <td><?php echo str_replace('_', ' ', $name)   ;?></td>
-<td></td>
+<td><?php
+    $shorten = substr($image, strpos($image, '_') + 1);
+    $new_name = str_replace('Former President from', 'President from', $shorten);
+    $new_name = str_replace('President from PA', 'Vice President from PA', $new_name);
+    echo $new_name;
+    ?></td>
+    <td>
+    <?php $newimage = str_replace('_', '2', $image) ;?>  
+    <img src="images/<?php echo substr($newimage, 0, 6);?>.jpg" </td>
+
 </tr>
 <?php endforeach ;?>
 </table>
