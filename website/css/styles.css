@@ -4,15 +4,20 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+   
 }
 
 body {
-    background: beige;
+    background: #aba7c0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.current {
+    color:white;
+}
+
 header {
-    background: yellow;
+    background: #aba7c0;
     padding:20px 0;
     
 }
@@ -24,7 +29,6 @@ header {
 }
 
 #logo {
-    width: 200px;
     float:left;
 }
 
@@ -51,28 +55,34 @@ clear:both;
 overflow: hidden;
 }
 
-#hero {
-   
-background: red;
-margin-bottom: 20px;
-}
+
 
 main {
 width: 62%;
-background: lightblue;
+background: white;
 float: left;
+padding: 15px;
+border: 3px solid #736f85;
+}
+
+.comp {
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
 }
 
 aside {
 width: 35%;
-background: lightsalmon;
+background: white;
 float: right;
+padding: 20px;
+border: 3px solid #736f85;
 }
 
 footer {
     height: 60px;
     line-height: 60px;
-    background: lightgray;
+    background: #aba7c0;
     clear: both;
 }
 
@@ -100,10 +110,13 @@ p {
 
 h1 {
     font-size: 2.5em;
+    text-align: center;
+    
 }
 
 h2 {
     font-size: 2em;
+    margin-top: 20px;
 }
 
 h3 {
@@ -114,3 +127,100 @@ h1, h2, h3 {
     margin-bottom: 10px;
     font-family: playfair serif;
 }
+
+
+
+.daily main {
+    padding: 15px;
+    
+}
+
+.daily h1 {
+    font-size: 2.5em;
+}
+
+.daily main h3 {
+    margin-bottom: 20px;
+}
+
+.daily img {
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.daily aside {
+    padding: 10px;
+    
+}
+
+.daily aside li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+form {
+    
+    margin:30px auto;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+span {
+    display: block;
+    color: red;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+form ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.thx p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thx img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
