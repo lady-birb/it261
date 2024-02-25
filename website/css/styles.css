@@ -48,6 +48,8 @@ nav a {
     text-decoration: none;
 }
 
+
+
 #wrapper {
 max-width: 1200px;
 margin: 20px auto;
@@ -224,3 +226,24 @@ form ul {
     margin-bottom: 20px;
 }
 
+table {
+    border: 1px solid pink;
+    border-collapse: collapse;
+    margin-top: 20px;
+    padding: 5px;
+    display: block;
+   } 
+ td {
+    border: 1px solid pink;
+    padding: 5px;
+    text-align: center;
+ }
+
+ .gallery h1 {
+    margin-bottom: 20px;
+ }
+
+ .gallery p {
+    text-align: center;
+    margin-bottom: 20px;
+ }
