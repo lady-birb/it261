@@ -1,5 +1,5 @@
 <?php
-$sanrio['Hello Kitty'] = 'Hello Kitty was born in the suburbs of London. She lives with her parents and her twin sister Mimmy who is her best friend. Her hobbies include baking cookies and making new friends.';
+$sanrio['Hello Kitty'] = 'hello_Hello Kitty was born in the suburbs of London. She lives with her parents and her twin sister Mimmy who is her best friend. Her hobbies include baking cookies and making new friends.';
 $sanrio['Chacocat'] = 'chaco_Chococat tends to be a little scatterbrained at times, but he is always up on the latest news, thanks to his ultrasensitive “antenna” whiskers!';
 $sanrio['Pochacco'] = 'pocha_Pochacco is a curious little guy who loves going for walks and eating banana ice cream.';
 $sanrio['Pompompurin'] = 'pomri_This boy golden retriever is unmistakable in his trademark brown beret. He has a laidback demeanor and loves the phrase "let\'s go out!"';
