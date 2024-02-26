@@ -22,7 +22,7 @@
 <li><a href="http://toriclasswork.com/it261/weeks/week5/calculator.php">Calculator</a></li>
 <li><a href="http://toriclasswork.com/it261/website/contact.php">Email</a></li>
 <li><a href="">Database</a></li>
-<li><a href="">Gallery</a></li>
+<li><a href="http://toriclasswork.com/it261/website/gallery.php">Gallery</a></li>
 </ul>
 
 </nav>
@@ -105,6 +105,16 @@
 <li><a href="https://toriclasswork.com/it261/weeks/week7/strings.php">strings.php</a></li>
 <li><a href="https://toriclasswork.com/it261/weeks/week7/pictures.php">pictures.php</a></li>
 <li><a href="https://toriclasswork.com/it261/weeks/week7/rand.php">rand.php</a></li>
+
+</ul>
+
+<h3>Week 8</h3>
+<ul>
+
+<li><a href="https://toriclasswork.com/it261/weeks/week8/config.php">config.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week8/credentials.php">credentials.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week8/people.php">people.php</a></li>
+<li><a href="https://toriclasswork.com/it261/weeks/week8/people-view.php">people-view.php</a></li>
 
 </ul>
 
