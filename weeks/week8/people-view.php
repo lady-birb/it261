@@ -69,7 +69,7 @@ echo '
 </main>
 
 <aside>
-<h3>Aside information that will display out person's image!</h3>
+<h3>Aside information that will display our person's image!</h3>
 <figure>
 <img src="./images/people<?php echo $id;?>.jpg" alt="<?php echo $first_name;?>">
 <figcaption>
