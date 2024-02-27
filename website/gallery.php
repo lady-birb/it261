@@ -1,4 +1,3 @@
-
 <?php
 include('config.php');
 include('./includes/header.php');
@@ -14,3 +13,4 @@ include('./includes/galleryphp.php');
 </div>
 <?php
 include('./includes/footer.php'); 
+?>
