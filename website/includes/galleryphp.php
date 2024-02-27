@@ -12,7 +12,7 @@ $sanrio['My Melody'] = 'mymel_My Melody was born in the forest of Mariland. Her 
 <table>
 <?php foreach($sanrio as $name => $image)  :?>
 <tr>
-<td><img src="images/<?php echo substr($image, 0, 5);?>.jpg" alt="<?php echo $name;?>"</td>
+<td><img src="images/<?php echo substr($image, 0, 5);?>.jpg" alt="<?php echo $name;?>"></td>
 <td><?php echo $name ;?></td>
 <td><?php
     echo substr($image, 6, 200);
