@@ -21,7 +21,7 @@
 <li><a href="http://toriclasswork.com/it261/weeks/week4/adder.php">Troubleshoot</a></li>
 <li><a href="http://toriclasswork.com/it261/weeks/week5/calculator.php">Calculator</a></li>
 <li><a href="http://toriclasswork.com/it261/website/contact.php">Email</a></li>
-<li><a href="">Database</a></li>
+<li><a href="http://toriclasswork.com/it261/website/project.php">Database</a></li>
 <li><a href="http://toriclasswork.com/it261/website/gallery.php">Gallery</a></li>
 </ul>
 
