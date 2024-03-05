@@ -247,3 +247,72 @@ table {
     text-align: center;
     margin-bottom: 20px;
  }
+
+ .project main {
+    padding:10px;
+    display: block;
+    margin-left: 20px;
+ }
+
+ .project li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+
+ .project h2, p, ul {
+    margin-left:10px;
+ }
+
+ .project p {
+    line-height: 1.4;
+ }
+
+.animal-view aside {
+    margin-right:20px;
+    margin-bottom: 40px;
+    text-align: center;
+    
+}
+
+
+
+.animal-view aside img {
+    display: block;
+    margin:0 auto;
+   
+}
+
+.animal-view main {
+    padding:20px;
+    width:56%;
+    margin-left:15px;
+    margin-bottom: 40px;
+}
+
+.animal-view p {
+    padding:20px;
+    line-height: 1.4;
+}
+
+.animal-view li {
+    list-style-type: none;
+    margin-bottom:5px;
+}
+
+figcaption {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.about main {
+    height:400px;
+    align-items: center;
+}
+
+.sql {
+    display:block;
+    margin-top:20px;
+ 
+}
