@@ -25,6 +25,11 @@ switch(THIS_PAGE) {
     $body = 'project inner';    
     break; 
 
+    case 'animal-view.php' :
+        $title = 'Animal Crossing Character Information';
+        $body = 'animal-view inner';    
+        break; 
+
     case 'contact.php' :
     $title = 'Contact page of our Website Project';
     $body = 'contact inner';    
@@ -327,4 +332,28 @@ $selected_image = ''.$photos[$i].'.jpg';
 $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'" >';
 return $my_return;
 
+}
+
+// For my gallery
+
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+// project
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
 }
