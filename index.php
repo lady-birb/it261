@@ -118,6 +118,11 @@
 
 </ul>
 
+<h3>Week 9 - Final Project</h3>
+<ul>
+<li><a href="http://toriclasswork.com/it261/weeks/week9/register.php">register.php</a></li>
+</ul>
+
 </aside>
 
 <footer>
